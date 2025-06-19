@@ -18,8 +18,8 @@ Course: Generative AI
     ├── run_all_parallel_threaded.py  # Multi-thread controller: invokes downloader to process monthly tasks
     ├── download_worker.py # Downloads images and performs initial filtering for faces and clarity 
     ├── faceposition.py  # Image preprocessing (alignment, cropping, blur detection, classification)
-    ├── diffusion.py # Generation image with diffusion model
-    ├── Diffusion_submit.ipynb # Generation image with diffusion model
+    ├── diffusion.py # Generates images with diffusion model
+    ├── Diffusion_submit.ipynb # Generates images with diffusion model
 ├── README.md                 
 
 </pre> 
