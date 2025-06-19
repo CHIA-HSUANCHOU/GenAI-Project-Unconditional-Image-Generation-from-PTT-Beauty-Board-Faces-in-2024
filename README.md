@@ -32,10 +32,12 @@ Course: Generative AI
 
 ## 2. Crawl
 `saveimagelinkmonth.py`
+
 1. Identify all PTT Beauty board posts from January 1 to December 31, 2024, extract all image links (jpg/png/gif formats) from each post, and save them to image_links.jsonl.
 2. Split the extracted links by month into image_links_01.jsonl, image_links_02.jsonl, ..., and save them into the monthly_jsonl/ folder.
 
 `run_all_parallel_threaded.py, download_worker.py`
+
 3. Use ThreadPoolExecutor(max_workers=4) to concurrently process up to 4 months of image downloads. The main controller script invokes download_worker.py to handle the JSONL data for each month.
 
 4. After each image is downloaded, use OpenCV's DNN face detection model to retain only images containing a human face. Then compute the Laplacian variance to assess image clarity (threshold: 60). **Only images that contain a face and are clear will be saved**.
