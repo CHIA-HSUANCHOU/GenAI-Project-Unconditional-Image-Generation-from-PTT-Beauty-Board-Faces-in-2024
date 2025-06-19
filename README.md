@@ -79,7 +79,8 @@ The cleaned dataset is saved in the data/ directory, including both frontal and 
 
 ### 1. Unet Structure
 
-<pre> StrongerUNet Architecture ──────────────────────────────────────────────────────────── Input (x, t)
+<pre> StrongerUNet Architecture ──────────────────────────────────────────────────────────── 
+Input (x, t)
    │
    ▼
 DoubleConv (in: 3 → 128)
